@@ -21,8 +21,6 @@ The archived LSTM studies also distinguish two architectural treatments of lagge
 - `LSTM`: Google Trends, financial variables, and lagged inflation enter the sequential LSTM path; country indicators remain static.
 - `ARX_LSTM`: Google Trends and financial variables enter the LSTM path, while lagged inflation enters the static fully connected path with the country indicators. In C, `week_position` is also static.
 
-Study names ending in `_vs` use separately constructed variable-selected panels. A LassoCV stage fitted to the Approach-A data before 2020 selected 20 Google Trends variables and four financial variables; that 24-variable set was then mapped to the A/B/C panel designs. The private `*_fin_vs.csv` panels are not part of this repository. Their scores should therefore not be compared with full-panel scores as if only the estimator had changed.
-
 No separate D optimization script survives in the inspected workspace. The current Week-Specific implementation reuses the B configuration because D's week-4 information set matches the B design.
 
 ## Temporal validation design
@@ -100,16 +98,11 @@ Each study listed below has 150 rows in its archived trial table. Best CV RMSE i
 
 | Study | Best CV RMSE | Hidden | Sequence | Layers | FC | Dropout | Learning rate | Batch | Weight decay |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| A_ARX_LSTM | 0.419237 | 128 | 18 | 2 | 128 | 0.188223 | 0.00142335 | 16 | 0.000162879 |
+| A_LSTM | 0.419237 | 128 | 18 | 2 | 128 | 0.188223 | 0.00142335 | 16 | 0.000162879 |
 | B_ARX_LSTM | 0.419510 | 128 | 23 | 2 | 128 | 0.061183 | 0.00109129 | 16 | 0.000396788 |
-| B_ARX_LSTM_vs | 0.395828 | 32 | 7 | 1 | 128 | 0.365835 | 0.00104939 | 32 | 0.00498476 |
 | B_LSTM | 1.000783 | 128 | 18 | 2 | 64 | 0.449791 | 0.00260245 | 32 | 0.000081411 |
-| B_LSTM_vs | 0.538913 | 128 | 10 | 1 | 64 | 0.148109 | 0.00103950 | 16 | 0.00559223 |
 | C_ARX_LSTM | 0.418843 | 128 | 23 | 2 | 128 | 0.307189 | 0.000674892 | 16 | 0.000510096 |
 | C_LSTM | 0.917129 | 32 | 23 | 1 | 64 | 0.000059 | 0.000205706 | 64 | 0.00136849 |
-| C_LSTM_vs | 0.492227 | 64 | 12 | 1 | 32 | 0.280492 | 0.00229752 | 16 | 0.00119453 |
-
-The workspace contains additional A/B/C study scripts for which a complete matching output folder is not present in the inspected optimization directory. This table therefore reports only study results supported by a surviving trial table and best-parameter artifact.
 
 ## Selected XGBoost result
 
@@ -144,7 +137,6 @@ The B XGBoost parameter values match exactly, but the fitting protocols are not 
 
 ## Audit qualifications
 
-- The variable-selection stage used the full pre-2020 sample, including the 2017-2019 Optuna validation years. The lower `_vs` scores therefore include feature-selection leakage and are exploratory rather than unbiased validation gains. A new study should repeat selection inside every fold.
 - C LSTM-family trials use all four week positions for model fitting and early-stopping loss, but rank trials using equal-country RMSE on week 4 only. Archived C LSTM `n_val` fields count all four weekly rows, and the reported training-versus-validation diagnostic is not like-for-like.
 - LSTM early stopping and hyperparameter selection reuse the same validation blocks. The archived LSTM CV values are selection criteria; the untouched 2020-2025 period is the subsequent test boundary.
 - The sequence-building loop in the archived tuners omits the final otherwise eligible sequence. This is the same endpoint issue identified for the retained model scripts in [limitations](limitations.md).
