@@ -1,6 +1,6 @@
 # Data
 
-This is a code-only portfolio repository. It documents and implements the data pipeline developed for the master's thesis *Tracking Inflation in the G20 at High Frequency and in Real Time: A Machine Learning Approach*, but it does not redistribute the underlying third-party datasets.
+This is a code-only research repository. It documents and implements the data pipeline developed for the master's thesis *Tracking Inflation in the G20 at High Frequency and in Real Time: A Machine Learning Approach*, but it does not redistribute the underlying third-party datasets.
 
 A fresh clone therefore shows how the data are acquired, transformed, aligned, and modelled, but it cannot reproduce the thesis results until the required source data have been obtained from their original providers.
 
@@ -148,7 +148,7 @@ The data are intentionally excluded because:
 - Google Trends, Yahoo Finance, Stooq, Investing.com, TradingView, and OECD data remain subject to their providers' current terms;
 - Google Trends values are normalized and can vary with the query window and retrieval date;
 - financial ticker histories and remote availability can change;
-- the raw and generated files are large and would obscure the source code in a portfolio repository.
+- the raw and generated files are large and would obscure the source code in the repository.
 
 The repository is currently all rights reserved. Its [copyright notice](../LICENSE) covers repository-owned code and documentation only; it does not grant rights to any third-party data, brand, or index.
 

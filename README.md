@@ -2,7 +2,7 @@
 
 A research pipeline for tracking year-on-year inflation at high frequency by combining weekly Google Trends and financial-market signals with monthly official inflation data.
 
-This repository contains the code from my Economics M.Sc. thesis, *Tracking Inflation in the G20 at High Frequency and in Real Time: A Machine Learning Approach* (FAU Erlangen-Nürnberg, 2026). It is presented as a data-science portfolio project: the emphasis is on mixed-frequency data engineering, model design, expanding-window evaluation, and model interpretation. Raw and processed datasets are not published.
+This repository contains the code from my Economics M.Sc. thesis, *Tracking Inflation in the G20 at High Frequency and in Real Time: A Machine Learning Approach* (FAU Erlangen-Nürnberg, 2026). It documents the mixed-frequency data engineering, model design, expanding-window evaluation, and model interpretation used in the study. Raw and processed datasets are not published.
 
 ## Project at a glance
 
@@ -25,7 +25,7 @@ The numerical findings above are results reported in the submitted thesis. They 
 - Comparing three mixed-frequency information designs: U-MIDAS, one-model-fits-all weekly updating, and week-specific models.
 - Evaluating models with expanding training windows rather than a random train/test split.
 - Interpreting a nonlinear sequence model with SHAP and grouped permutation importance.
-- Translating an academic experiment into an auditable, hiring-manager-friendly repository.
+- Translating an academic experiment into an auditable research repository.
 
 ## Pipeline
 
@@ -59,7 +59,7 @@ See [pipeline documentation](docs/pipeline.md) for the stage-by-stage mapping to
 │   ├── master.py       # sequential pipeline orchestrator
 │   └── requirements.txt
 ├── docs/               # research, architecture, data, and reproducibility notes
-├── LICENSE             # all-rights-reserved portfolio release
+├── LICENSE             # all-rights-reserved research release
 ├── .gitattributes      # consistent text line endings
 └── .gitignore          # blocks datasets, environments, logs, and generated artifacts
 ~~~
@@ -94,4 +94,4 @@ The thesis was submitted on 15 May 2026. The documentation layer was added after
 
 ## License
 
-Copyright © 2026 Ahmet Yigit Coskun. All rights reserved. The repository is public for portfolio review and academic reference, but it is not currently released under an open-source license. See [LICENSE](LICENSE).
+Copyright © 2026 Ahmet Yigit Coskun. All rights reserved. The repository is publicly available for academic reference, but it is not currently released under an open-source license. See [LICENSE](LICENSE).

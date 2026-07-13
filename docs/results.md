@@ -1,7 +1,7 @@
 # Thesis-reported results
 
 > [!IMPORTANT]
-> The values below are transcribed from the submitted master's thesis. The underlying data are not distributed, and the metrics were not regenerated for this portfolio release. Read them with [limitations.md](limitations.md), which separates the submitted findings from later implementation-audit observations.
+> The values below are transcribed from the submitted master's thesis. The underlying data are not distributed, and the metrics were not regenerated for this code release. Read them with [limitations.md](limitations.md), which separates the submitted findings from later implementation-audit observations.
 
 ## Main U-MIDAS comparison
 

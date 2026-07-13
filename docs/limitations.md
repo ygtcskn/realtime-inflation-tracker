@@ -60,7 +60,7 @@ SHAP and permutation importance explain how the fitted model uses inputs. They d
 
 Several items can affect forecast errors. Existing numerical outputs should therefore keep the **thesis-reported** label until the pipeline is corrected and rerun from source inputs.
 
-## Portfolio and production boundary
+## Code release and production boundary
 
 The code-only release protects third-party data rights and makes the source reviewable, but a clone cannot regenerate thesis tables without reacquiring data.
 

@@ -8,7 +8,7 @@ This directory explains the research and code without requiring access to the pr
 
 ## Suggested reading paths
 
-For a two-minute portfolio review, read the [root README](../README.md), then [architecture](architecture.md) and [results](results.md).
+For a brief overview, read the [root README](../README.md), then [architecture](architecture.md) and [results](results.md).
 
 For a technical review, continue with [pipeline](pipeline.md), [methodology](methodology.md), [models](models.md), and [evaluation](evaluation.md).
 
