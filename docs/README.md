@@ -10,7 +10,7 @@ This directory explains the research and code without requiring access to the pr
 
 For a brief overview, read the [root README](../README.md), then [architecture](architecture.md) and [results](results.md).
 
-For a technical review, continue with [pipeline](pipeline.md), [methodology](methodology.md), [models](models.md), and [evaluation](evaluation.md).
+For a technical review, continue with [pipeline](pipeline.md), [methodology](methodology.md), [models](models.md), [hyperparameter optimization](hyperparameter-optimization.md), and [evaluation](evaluation.md).
 
 For reproduction or reuse, read [data](data.md), [reproducibility](reproducibility.md), [limitations](limitations.md), and the [analysis guide](../analysis/README.md).
 
@@ -23,6 +23,7 @@ For reproduction or reuse, read [data](data.md), [reproducibility](reproducibili
 | [Data](data.md) | Sources, country coverage, schemas, private-data policy, and validation expectations |
 | [Methodology](methodology.md) | Research design and mixed-frequency formulations |
 | [Models](models.md) | Benchmarks, LASSO, XGBoost, and LSTM designs |
+| [Hyperparameter optimization](hyperparameter-optimization.md) | Optuna search spaces, temporal validation, archived study results, and parameter provenance |
 | [Evaluation](evaluation.md) | Expanding-window protocol, metrics, tests, and interpretation |
 | [Results](results.md) | Main numerical findings reported in the submitted thesis |
 | [Limitations](limitations.md) | Google Trends constraints, archival-code caveats, and productionization work |

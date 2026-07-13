@@ -72,6 +72,7 @@ See [pipeline documentation](docs/pipeline.md) for the stage-by-stage mapping to
 - [Data sources and schemas](docs/data.md)
 - [Methodology](docs/methodology.md)
 - [Model designs](docs/models.md)
+- [Hyperparameter optimization](docs/hyperparameter-optimization.md)
 - [Evaluation protocol](docs/evaluation.md)
 - [Thesis results](docs/results.md)
 - [Limitations and production considerations](docs/limitations.md)
@@ -80,7 +81,7 @@ See [pipeline documentation](docs/pipeline.md) for the stage-by-stage mapping to
 
 ## Reproducing the work
 
-The repository is an archival research implementation, not a packaged production service. Exact end-to-end reproduction requires private source data, and several provider histories may have changed since the thesis was completed. The current snapshot also retains research-oriented orchestration assumptions and selected hyperparameters rather than the original tuning workflow.
+The repository is an archival research implementation, not a packaged production service. Exact end-to-end reproduction requires private source data, and several provider histories may have changed since the thesis was completed. The current snapshot retains selected hyperparameters; the separate historical tuning workflow is documented in [hyperparameter optimization](docs/hyperparameter-optimization.md), but its private scripts and study artifacts are not included.
 
 Start with [analysis/README.md](analysis/README.md) for the executable stages and [docs/reproducibility.md](docs/reproducibility.md) for what can and cannot be reproduced from this release.
 

@@ -70,7 +70,7 @@ The model comparison progresses from persistent univariate benchmarks to flexibl
 
 The main pseudo-out-of-sample period runs from January 2020 through September 2025. At each origin, the model trains on earlier observations and the window expands by one month.
 
-The thesis describes 150-trial Optuna tuning with three pre-test validation blocks covering 2017, 2018, and 2019. The repository preserves selected parameter values but not the original Optuna study code.
+The thesis models were tuned with Optuna using three pre-test validation blocks covering 2017, 2018, and 2019. The repository preserves selected parameter values and a [documentation record of the archived studies](hyperparameter-optimization.md), but not the private Optuna executables or study databases.
 
 ## Interpretation
 

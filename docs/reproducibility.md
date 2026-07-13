@@ -50,7 +50,7 @@ The top-level orchestrator expresses the intended order, but it is not currently
 
 - the data files it expects are intentionally absent;
 - some later diagnostic/table scripts are not included in the orchestrator;
-- hyperparameter values are embedded in model scripts, while the Optuna search workflow described in the thesis is not included.
+- hyperparameter values are embedded in model scripts, and the historical Optuna workflow is documented in [hyperparameter optimization](hyperparameter-optimization.md), while the private tuning executables and study databases are not included.
 
 For code review, use [pipeline.md](pipeline.md) as the authoritative map of surviving components. For a new empirical run, execute and validate one stage at a time rather than treating `python master.py` as a verified turnkey command.
 
@@ -67,7 +67,7 @@ These differences do not rewrite the submitted paper. They define the boundary o
 3. Validate configuration-derived input and output locations on a clean checkout.
 4. Refit every data-dependent transformation inside each expanding training window.
 5. Add checks for source coverage, missing countries, five-week months, and sequence endpoints.
-6. Recreate hyperparameter search with stored study metadata and fixed temporal folds.
+6. Recreate the documented hyperparameter search with portable scripts, stored study metadata, and fixed temporal folds.
 7. Regenerate predictions and tables from a single versioned run manifest.
 8. Compare the new outputs with thesis-reported values and explain material deviations.
 

@@ -110,7 +110,7 @@ The main scripts generate a common artifact family:
 <prefix>_sq_errors_pivot.csv
 ~~~
 
-The LSTM and XGBoost scripts retain the selected hyperparameters used by the thesis. The 150-trial Optuna workflow described in the paper is not included in this snapshot.
+The LSTM and XGBoost scripts retain selected Optuna parameters used by the thesis. The private tuning executables are not included, but the inspected search design and parameter provenance are recorded in [hyperparameter optimization](hyperparameter-optimization.md).
 
 ## 5. Interpretability and robustness
 

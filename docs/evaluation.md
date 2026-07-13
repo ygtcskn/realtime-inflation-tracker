@@ -28,6 +28,8 @@ The thesis selects hyperparameters before the test period with three expanding v
 
 Each fold uses only earlier observations for training. The stated Optuna objective is the mean of country-specific RMSEs, giving every country equal weight.
 
+See [hyperparameter optimization](hyperparameter-optimization.md) for the exact search spaces, trial counts, C-LSTM week-4 objective, and archived best-trial evidence.
+
 ## Accuracy metrics
 
 For country $i$:

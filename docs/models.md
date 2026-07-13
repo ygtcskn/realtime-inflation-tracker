@@ -90,9 +90,9 @@ The D models reuse the B configuration because the D week-4 information set matc
 
 ## Hyperparameter-search design
 
-The submitted thesis describes 150 Optuna trials with a Tree-structured Parzen Estimator. The objective is the average country-level RMSE across expanding validation blocks for 2017, 2018, and 2019, giving every country equal weight. Hyperparameters are selected before the January 2020 test period and held fixed during evaluation.
+The archived LSTM studies use 150 Optuna trials with a Tree-structured Parzen Estimator; the surviving XGBoost study uses 100. The objective is the average country-level RMSE across expanding validation blocks for 2017, 2018, and 2019, giving every country equal weight. Hyperparameters are selected before the January 2020 test period and held fixed during evaluation.
 
-Only the selected constants remain in this repository; the Optuna trials and study storage are not included.
+The selected constants remain in this repository, while the Optuna executables and study storage remain in a separate private archive. [Hyperparameter optimization](hyperparameter-optimization.md) documents the inspected search spaces, study design, surviving results, and the connection between archived best trials and the current model scripts.
 
 ## Why compare several model classes?
 
