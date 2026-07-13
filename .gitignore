@@ -1,0 +1,67 @@
+# Private or non-redistributable data are intentionally excluded.
+analysis/data/*
+!analysis/data/README.md
+
+# Keep the empty data-directory skeleton without tracking its contents.
+!analysis/data/raw/
+analysis/data/raw/*
+!analysis/data/raw/.gitkeep
+!analysis/data/temp/
+analysis/data/temp/*
+!analysis/data/temp/.gitkeep
+!analysis/data/final/
+analysis/data/final/*
+!analysis/data/final/.gitkeep
+
+# Generated research artifacts
+analysis/logs/
+analysis/output/
+analysis/tables/*
+analysis/graphs/*
+
+# Model and array artifacts
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.npy
+*.npz
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and editors
+.venv/
+venv/
+.idea/
+.vscode/
+*.code-workspace
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Notebooks, operating-system files, and local working files
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+tmp/
+
+# R and local agent workspaces
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.Rproj.user/
+.agents/
+.codex/
